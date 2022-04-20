@@ -59,14 +59,18 @@ header{
     cursor: pointer;
 
     /* Tamaño */
-    width: 150px;
+    width: 100px;
 
     /* Margen derecho */
     margin-right: 20px;
 }
 
-.logo:hover{
-    
+div.logo:hover{
+    color: blue;
+}
+
+svg#index-logo{
+    fill: black;
 }
 
 /* Elementos del menú */
