@@ -1,0 +1,100 @@
+/* Importar una fuente personalizada: Montserrat Alternates */
+@import url('https://fonts.googleapis.com/css2?family=Montserrat+Alternates:wght@500&display=swap');
+
+/* Anular todos los estilos */
+* {
+    /* Incluir el valor del border y padding dentro del control */
+    box-sizing: border-box;
+
+    /* Establecer valores a 0 */
+    margin: 0;
+    padding: 0;
+}
+
+/* Fuente para los menú */
+li, a{
+    /* Establecer el estilo de fuente */
+    font-family: 'Montserrat Alternates', sans-serif;
+    font-size: 16px;
+    font-weight: 500;
+
+    /* Eliminar características de los elementos */
+    text-decoration: none;
+}
+
+/* Modelo de alineación: FlexBox */
+header{
+    /* Forma de representación de los elementos del menú */
+    display: flex;
+
+    /* Ubicar los elementos: X = Izquierda */
+    justify-content: left;
+
+    /* Centrar los elementos: Y = Centro */
+    align-items: center;
+    /* align-items: stretch */
+
+    /* Márgenes */
+    margin: 20px;
+
+    /* Relleno */
+    padding: 20px;
+
+    /* Medida: Alto */
+    height: 75px;
+
+    /* Fondo */
+    background: #d6afdc;
+
+    /* Sombra */
+    box-shadow: 0 0 5px gray;
+
+    /* Borde redondeado */
+    border-radius: 5px;
+}
+
+/* Estilos al Logo */
+.logo{
+
+    /* Cursor: Manito */
+    cursor: pointer;
+
+    /* Tamaño */
+    width: 150px;
+
+    /* Margen derecho */
+    margin-right: 20px;
+}
+
+/* Elementos del menú */
+.nav__elements{
+    /* Eliminar las viñetas */
+    list-style: none;
+}
+
+/* Menú */
+.nav__elements li{
+    /* Ubicar cada menú junto al otro */
+    display: inline-block;
+
+    /* Relleno */
+    padding: 20px;
+
+}
+
+/* Efectos de cada Menú */
+.nav__elements li a{
+    /* Agregar un borde con esquinas redondeadas */
+    border-radius: 4px;
+
+    /* Transiciones */
+    transition: all 0.3s ease 0s;
+}
+
+/* Efectos de cada Menú: MouseHover */
+.nav__elements li a:hover{
+
+    /* Colores */
+    background-color: blue;
+    color: #fff;
+}
