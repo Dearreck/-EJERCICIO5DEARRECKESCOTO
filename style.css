@@ -53,27 +53,51 @@ header {
     border-radius: 5px;
 }
 
-/* Estilos al Logo */
-svg.logo {
+/* Estilos al Logo: Normal */
+header>svg.logo,                                    /* Borde de la línea */
+header>svg.logo>.index-icono>path,                  /* Icono del logo */
+header>svg.logo>.index-icono>.index-texto>path {    /* Texto del logo */
 
     /* Cursor: Manito */
     cursor: pointer;
 
     /* Tamaño */
-    width: 175px;
+    width: 150px;
 
     /* Margen derecho */
     margin-right: 20px;
+
+    /* Bordes redondeados */
+    border-radius: 5px;
+
+    /* Color del borde */
+    border: solid 2px rgba(58, 31, 193, 0.95);
+
+    /* Relleno */
+    padding: 5px;
+
+    /* Color de la línea */
+    stroke: rgba(58, 31, 193, 0.95);
+
+    /* Grosor de la línea */
+    stroke-width: 3;
 }
 
-svg.logo {
-    color: rgba(58, 31, 193, 0.95);
-}
+/* Estilos al Logo: MouseOver */
+header>svg.logo:hover,                                  /* Borde de la línea */
+header>svg.logo:hover>.index-icono>path,                /* Icono del logo */
+header>svg.logo:hover>.index-icono>.index-texto>path{   /* Texto del logo */
+    /* Fondo del logo */
+    background-color: goldenrod;
 
-svg.logo:hover {
-    color: rgba(10, 10, 5, 0.949);
-}
+    /* Quitar el borde del logo */
+    border: none;
 
+    /* Personalización de las líneas */
+    stroke: rgba(0, 0, 0, 1);         /* Color */
+    stroke-width: 3;                          /* Ancho */
+    stroke-opacity: 1;                        /* Opacidad */
+}
 
 /* Elementos del menú */
 .nav__elements {
@@ -101,6 +125,9 @@ svg.logo:hover {
 
     /* Transiciones */
     transition: all 0.3s ease 0s;
+
+    /* Color del Texto */
+    color: #fff;
 }
 
 /* Efectos de cada Menú: MouseHover */
