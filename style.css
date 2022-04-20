@@ -3,12 +3,12 @@
 
 /* Anular todos los estilos */
 * {
-    /* Incluir el valor del border y padding dentro del control */
-    box-sizing: border-box;
-
-    /* Establecer valores a 0 */
+     /* Establecer valores a 0 */
     margin: 0;
     padding: 0;
+
+    /* Incluir el valor del border y padding dentro del control */
+    box-sizing: border-box;
 }
 
 /* Fuente para los menú */
@@ -16,7 +16,7 @@ li, a{
     /* Establecer el estilo de fuente */
     font-family: 'Montserrat Alternates', sans-serif;
     font-size: 16px;
-    font-weight: 500;
+    font-weight: bolder;
 
     /* Eliminar características de los elementos */
     text-decoration: none;
@@ -32,7 +32,6 @@ header{
 
     /* Centrar los elementos: Y = Centro */
     align-items: center;
-    /* align-items: stretch */
 
     /* Márgenes */
     margin: 20px;
@@ -66,6 +65,10 @@ header{
     margin-right: 20px;
 }
 
+.logo:hover{
+    
+}
+
 /* Elementos del menú */
 .nav__elements{
     /* Eliminar las viñetas */
@@ -86,6 +89,9 @@ header{
 .nav__elements li a{
     /* Agregar un borde con esquinas redondeadas */
     border-radius: 4px;
+
+    /* Relleno */
+    padding: 20px;
 
     /* Transiciones */
     transition: all 0.3s ease 0s;
