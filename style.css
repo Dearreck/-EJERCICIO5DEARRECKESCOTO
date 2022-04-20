@@ -3,7 +3,7 @@
 
 /* Anular todos los estilos */
 * {
-     /* Establecer valores a 0 */
+    /* Establecer valores a 0 */
     margin: 0;
     padding: 0;
 
@@ -12,7 +12,8 @@
 }
 
 /* Fuente para los menú */
-li, a{
+li,
+a {
     /* Establecer el estilo de fuente */
     font-family: 'Montserrat Alternates', sans-serif;
     font-size: 16px;
@@ -23,7 +24,7 @@ li, a{
 }
 
 /* Modelo de alineación: FlexBox */
-header{
+header {
     /* Forma de representación de los elementos del menú */
     display: flex;
 
@@ -53,34 +54,35 @@ header{
 }
 
 /* Estilos al Logo */
-.logo{
+svg.logo {
 
     /* Cursor: Manito */
     cursor: pointer;
 
     /* Tamaño */
-    width: 100px;
+    width: 175px;
 
     /* Margen derecho */
     margin-right: 20px;
 }
 
-div.logo:hover{
-    color: blue;
+svg.logo {
+    color: rgba(58, 31, 193, 0.95);
 }
 
-svg#index-logo{
-    fill: black;
+svg.logo:hover {
+    color: rgba(10, 10, 5, 0.949);
 }
+
 
 /* Elementos del menú */
-.nav__elements{
+.nav__elements {
     /* Eliminar las viñetas */
     list-style: none;
 }
 
 /* Menú */
-.nav__elements li{
+.nav__elements li {
     /* Ubicar cada menú junto al otro */
     display: inline-block;
 
@@ -90,7 +92,7 @@ svg#index-logo{
 }
 
 /* Efectos de cada Menú */
-.nav__elements li a{
+.nav__elements li a {
     /* Agregar un borde con esquinas redondeadas */
     border-radius: 4px;
 
@@ -102,7 +104,7 @@ svg#index-logo{
 }
 
 /* Efectos de cada Menú: MouseHover */
-.nav__elements li a:hover{
+.nav__elements li a:hover {
 
     /* Colores */
     background-color: blue;
